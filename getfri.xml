@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:getfinancialresourceinformationresponse xmlns:ns2="http://www.ericsson.com/em/emm/sp/backend">
+    <extension>
+        <products>
+            <product>
+                <productid>10</productid>
+                <producttype>primary</producttype>
+                <productname>Access Bouquet</productname>
+                <productprice>9600</productprice>
+            </product>
+            <product>
+                <productid>11</productid>
+                <producttype>primary</producttype>
+                <productname>Family Bouquet</productname>
+                <productprice>18000</productprice>
+            </product>
+            <product>
+                <productid>20</productid>
+                <producttype>extra</producttype>
+                <productname>Extra View</productname>
+                <productprice>9600</productprice>
+            </product>
+        </products>
+        <statuscode>01</statuscode>
+    </extension>
+    <message>Request Successfully Completed</message>
+</ns2:getfinancialresourceinformationresponse>

@@ -1,0 +1,107 @@
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<makecodepayment type="makecodepayment">
+    <vendor>MVend</vendor>
+    <apikey>8fe5a484312df9bc5b19e072246366c8fc6413f31</apikey>
+    <userid>1400001</userid>
+    <transaction>
+        <transactionid>15110120195</transactionid>
+        <broadcasterid>GoTV</broadcasterid>
+        <cardnumber>2016872893</cardnumber>
+        <bouquetid></bouquetid>
+        <amount>6500.00</amount>
+        <payrefno>458009560</payrefno>
+    </transaction>
+</makecodepayment>
+
+
+
+
+
+
+------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<findpaymentcode type="findpaymentcode">
+    <merchant>MVend</merchant>
+    <merchantid>A0B1C2D3E4G3</merchantid>
+    <apikey>8fe5a484312df9bc5b19e072246366c8fc6413f31</apikey>
+    <transaction>
+        <transactionid>15110120195</transactionid>
+        <paymentcode>GoTV</paymentcode>
+    </transaction>
+</findpaymentcode>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<requestcodestatus type="checkcodestatus">
+    <merchant>MVend</merchant>
+    <merchantid>A0B1C2D3E4G3</merchantid>
+    <apikey>8fe5a484312df9bc5b19e072246366c8fc6413f31</apikey>
+    <transaction>
+        <transactionid>15110120195</transactionid>
+        <paymentcode>GoTV</paymentcode>
+    </transaction>
+</requestcodestatus>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<endofdayreport type="endofdayreport">
+    <merchant>MVend</merchant>
+    <merchantid>A0B1C2D3E4G3</merchantid>
+    <apikey>8fe5a484312df9bc5b19e072246366c8fc6413f31</apikey>
+</endofdayreport>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<requestpaymentcode type="requestpaymentcode">
+    <merchant>MVend</merchant>
+    <merchantid>A0B1C2D3E4G3</merchantid>
+    <apikey>8fe5a484312df9bc5b19e072246366c8fc6413f31</apikey>
+    <transaction>
+        <transactionid>15110120195</transactionid>
+        <transactionamount>6500.00</transactionamount>
+        <monitor>1</monitor>
+        <transactionnotes>Purchase Of Domain Name</transactionnotes>
+    </transaction>
+</requestpaymentcode>
+
+
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<getproductsinformation type="getproductsinformationrequest">
+    <vendor>AirtelMoney</vendor>
+    <serviceid>9999</serviceid>
+    <userid>737800</userid> 
+    <apikey>8fe5a484312df9bc5b19e072246366c8fc6413f31</apikey> 
+    <request>
+        <requestid>12345678</requestid > 
+    </request> 
+</getproductsinformation>
+
+<?xml version="1.0" encoding="UTF-8"?> <operationResult type="getproductsinformationresponse">
+    <response>
+        <requestid>12345678</requestid> 
+        <responsecode>100</responsecode> 
+        <responsemsg>Successful Infor Query</responsemsg> 
+        <products>
+            <product>
+                <productid>10</productid>
+                <producttype>primary</producttype>
+                <productname>Access Bouquet</productname>
+                <productprice>9600</productprice>
+            </product>
+            <product>
+                <productid>11</productid>
+                <producttype>primary</producttype>
+                <productname>Family Bouquet</productname>
+                <productprice>18000</productprice>
+            </product>
+            <product>
+                <productid>20</productid>
+                <producttype>extra</producttype>
+                <productname>Extra View</productname>
+                <productprice>9600</productprice>
+            </product>
+        </products>
+    </response>

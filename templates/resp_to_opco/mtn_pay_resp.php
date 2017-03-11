@@ -1,0 +1,29 @@
+<?php
+$mtn_pay_resp = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:b2b="http://b2b.mobilemoney.mtn.zm_v1.0/">
+       <soapenv:Header/>
+       <soapenv:Body>
+         <b2b:processRequestResponse>
+            <return>
+              <name>ProcessingNumber</name>
+              <value>'.$trans_data['pay_serv_transaction_id'].'</value>
+            </return>
+            <return>
+              <name>StatusCode</name>
+              <value>'.$trans_data['pay_serv_resp_code'].'</value>
+            </return>
+         <return>
+              <name>StatusDesc</name>
+              <value>'.$trans_data['processing_response'].'</value>
+            </return>
+            <return>
+              <name>ThirdPartyAcctRef</name>
+              <value>'.$trans_data['serv_account_ref'].'</value>
+            </return>
+            <return>
+              <name>Token</name>
+              <value>'.$trans_data['token'].'</value>
+            </return>
+         </b2b:processRequestResponse>
+       </soapenv:Body>
+    </soapenv:Envelope>';
+?>
